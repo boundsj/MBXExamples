@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		408C0F361D72697B002C9868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F351D72697B002C9868 /* AppDelegate.swift */; };
-		408C0F381D72697B002C9868 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F371D72697B002C9868 /* MainViewController.swift */; };
+		408C0F381D72697B002C9868 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F371D72697B002C9868 /* CategoryViewController.swift */; };
 		408C0F3B1D72697B002C9868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C0F391D72697B002C9868 /* Main.storyboard */; };
 		408C0F3D1D72697B002C9868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408C0F3C1D72697B002C9868 /* Assets.xcassets */; };
 		408C0F401D72697B002C9868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C0F3E1D72697B002C9868 /* LaunchScreen.storyboard */; };
+		40BE2DEC1D7323CA009581A9 /* ExampleListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE2DEB1D7323CA009581A9 /* ExampleListCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		408C0F321D72697B002C9868 /* MBXExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBXExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408C0F351D72697B002C9868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		408C0F371D72697B002C9868 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		408C0F371D72697B002C9868 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		408C0F3A1D72697B002C9868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		408C0F3C1D72697B002C9868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		408C0F3F1D72697B002C9868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		408C0F411D72697B002C9868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40BE2DEB1D7323CA009581A9 /* ExampleListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleListCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +77,26 @@
 			isa = PBXGroup;
 			children = (
 				408C0F351D72697B002C9868 /* AppDelegate.swift */,
-				408C0F371D72697B002C9868 /* MainViewController.swift */,
+				40BE2DE91D732382009581A9 /* Category */,
+				40BE2DEA1D73238E009581A9 /* ExampleList */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		40BE2DE91D732382009581A9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				408C0F371D72697B002C9868 /* CategoryViewController.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		40BE2DEA1D73238E009581A9 /* ExampleList */ = {
+			isa = PBXGroup;
+			children = (
+				40BE2DEB1D7323CA009581A9 /* ExampleListCollectionViewController.swift */,
+			);
+			name = ExampleList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				408C0F381D72697B002C9868 /* MainViewController.swift in Sources */,
+				40BE2DEC1D7323CA009581A9 /* ExampleListCollectionViewController.swift in Sources */,
+				408C0F381D72697B002C9868 /* CategoryViewController.swift in Sources */,
 				408C0F361D72697B002C9868 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +336,7 @@
 				408C0F461D72697B002C9868 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

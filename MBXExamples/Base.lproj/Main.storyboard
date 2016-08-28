@@ -29,30 +29,55 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="SWF-Ei-SHC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Phm-Mz-PDH">
-                            <size key="itemSize" width="50" height="50"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="Phm-Mz-PDH">
+                            <size key="itemSize" width="300" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="16" minY="8" maxX="16" maxY="8"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCellIdentifier" id="Exe-bY-mlj">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCellIdentifier" id="Exe-bY-mlj" userLabel="Category Cell" customClass="CategoryCollectionViewCell" customModule="MBXExamples" customModuleProvider="target">
+                                <rect key="frame" x="38" y="8" width="300" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cag-tm-KQN">
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIM-ZG-7ud">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="MIM-ZG-7ud" firstAttribute="top" secondItem="cag-tm-KQN" secondAttribute="top" constant="15" id="BnY-BC-NQd"/>
+                                                <constraint firstItem="MIM-ZG-7ud" firstAttribute="leading" secondItem="cag-tm-KQN" secondAttribute="leading" constant="8" id="kn4-ia-MIk"/>
+                                                <constraint firstAttribute="trailing" secondItem="MIM-ZG-7ud" secondAttribute="trailing" constant="8" id="tPs-d0-v9j"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="cag-tm-KQN" firstAttribute="leading" secondItem="Exe-bY-mlj" secondAttribute="leading" id="Dbc-Nu-hT2"/>
+                                    <constraint firstItem="cag-tm-KQN" firstAttribute="top" secondItem="Exe-bY-mlj" secondAttribute="top" id="MLB-Bu-Hlh"/>
+                                    <constraint firstAttribute="trailing" secondItem="cag-tm-KQN" secondAttribute="trailing" id="mYx-h8-ozV"/>
+                                    <constraint firstAttribute="bottom" secondItem="cag-tm-KQN" secondAttribute="bottom" id="ztS-9Y-39m"/>
+                                </constraints>
                                 <connections>
+                                    <outlet property="containerView" destination="cag-tm-KQN" id="Toy-yA-SEq"/>
+                                    <outlet property="titleLabel" destination="MIM-ZG-7ud" id="FVZ-eP-Rod"/>
                                     <segue destination="7EN-yT-gvj" kind="show" id="imA-gZ-Bq1"/>
                                 </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exampleCellIdentifier" id="xJh-IL-haI">
-                                <rect key="frame" x="65" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exampleCellIdentifier" id="xJh-IL-haI" userLabel="Example Cell">
+                                <rect key="frame" x="38" y="116" width="300" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
                             </collectionViewCell>
@@ -66,7 +91,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5Z-vn-wwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="79"/>
+            <point key="canvasLocation" x="828" y="78.710644677661179"/>
         </scene>
         <!--Example List Collection View Controller-->
         <scene sceneID="2B2-xV-HI7">
@@ -75,7 +100,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Gz6-FU-jg1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J1c-et-2I9">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>

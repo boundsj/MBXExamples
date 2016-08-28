@@ -4,6 +4,8 @@ class ExampleListCollectionViewController: UICollectionViewController {
 
     private let exampleCellIdentifier = "exampleCellIdentifier"
     
+    var examples: [Example]?
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         useLayoutToLayoutNavigationTransitions = true
@@ -26,12 +28,16 @@ class ExampleListCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        guard let examples = examples else {
+            return 0
+        }
+        
+        return examples.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: exampleCellIdentifier, for: indexPath)
-        cell.backgroundColor = UIColor.red
+        cell.backgroundColor = UIColor.blue
         return cell
     }
 

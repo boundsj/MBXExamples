@@ -158,8 +158,22 @@
                     <view key="view" contentMode="scaleToFill" id="Xdy-hi-mbp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IrV-X1-qpv" customClass="MGLMapView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IrV-X1-qpv" firstAttribute="leading" secondItem="Xdy-hi-mbp" secondAttribute="leading" id="Gxa-fz-JrT"/>
+                            <constraint firstAttribute="trailing" secondItem="IrV-X1-qpv" secondAttribute="trailing" id="TyI-NN-Cox"/>
+                            <constraint firstItem="aK3-QG-4eB" firstAttribute="top" secondItem="IrV-X1-qpv" secondAttribute="bottom" id="pdp-iO-wM3"/>
+                            <constraint firstItem="IrV-X1-qpv" firstAttribute="top" secondItem="SOE-TT-5bH" secondAttribute="bottom" id="w8f-kr-RpH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="IrV-X1-qpv" id="IwZ-l1-HK1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFV-1N-jb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -2,6 +2,7 @@ import Foundation
 
 struct Example {
     let title: String
+    let activity: MapboxMapActivity
 }
 
 struct Category {
@@ -14,10 +15,10 @@ let categories = [
     
     Category(title: "Annotations",
              description: "Draw markers and shapes on the map",
-             examples: [Example(title: "Polygon")]),
+             examples: [Example(title: "Polygon", activity: PolygonActivity())]),
     
     Category(title: "Camera",
-             description: "View and move around the map",
-             examples: [Example(title: "Animation")]),
+             description: "Draw markers and shapes on the map",
+             examples: [Example(title: "Animation", activity: PolygonActivity())])
     
 ]

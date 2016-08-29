@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA7B1B14FC3E64A9E50A889 /* libPods-MBXExamples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6DAA5B6A6E899E8988A703 /* libPods-MBXExamples.a */; };
 		408C0F361D72697B002C9868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F351D72697B002C9868 /* AppDelegate.swift */; };
 		408C0F381D72697B002C9868 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F371D72697B002C9868 /* CategoryViewController.swift */; };
 		408C0F3B1D72697B002C9868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C0F391D72697B002C9868 /* Main.storyboard */; };
@@ -18,9 +19,26 @@
 		40FE9CF21D73ACB0003BACB4 /* MapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE9CF11D73ACB0003BACB4 /* MapContainerViewController.swift */; };
 		40FE9CF51D73AD7D003BACB4 /* ExampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE9CF41D73AD7D003BACB4 /* ExampleCollectionViewCell.swift */; };
 		40FE9CF91D73BE18003BACB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE9CF81D73BE18003BACB4 /* Constants.swift */; };
+		40FE9D141D73F015003BACB4 /* MapboxMapActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE9D131D73F015003BACB4 /* MapboxMapActivity.swift */; };
+		40FE9D171D73F0ED003BACB4 /* PolygonActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE9D161D73F0ED003BACB4 /* PolygonActivity.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		40FE9D101D73EE1A003BACB4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		00ECBB9E649C681428899FED /* Pods-MBXExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBXExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBXExamples/Pods-MBXExamples.debug.xcconfig"; sourceTree = "<group>"; };
+		20D02336C9ED571ED7A500E4 /* Pods-MBXExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBXExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBXExamples/Pods-MBXExamples.release.xcconfig"; sourceTree = "<group>"; };
 		408C0F321D72697B002C9868 /* MBXExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBXExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408C0F351D72697B002C9868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		408C0F371D72697B002C9868 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +52,9 @@
 		40FE9CF11D73ACB0003BACB4 /* MapContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapContainerViewController.swift; sourceTree = "<group>"; };
 		40FE9CF41D73AD7D003BACB4 /* ExampleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewCell.swift; sourceTree = "<group>"; };
 		40FE9CF81D73BE18003BACB4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		40FE9D131D73F015003BACB4 /* MapboxMapActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxMapActivity.swift; sourceTree = "<group>"; };
+		40FE9D161D73F0ED003BACB4 /* PolygonActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonActivity.swift; sourceTree = "<group>"; };
+		9D6DAA5B6A6E899E8988A703 /* libPods-MBXExamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MBXExamples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +62,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA7B1B14FC3E64A9E50A889 /* libPods-MBXExamples.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AC219ED54AEB16D0143D916 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00ECBB9E649C681428899FED /* Pods-MBXExamples.debug.xcconfig */,
+				20D02336C9ED571ED7A500E4 /* Pods-MBXExamples.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		408C0F291D72697B002C9868 = {
 			isa = PBXGroup;
 			children = (
 				408C0F341D72697B002C9868 /* MBXExamples */,
 				408C0F331D72697B002C9868 /* Products */,
+				0AC219ED54AEB16D0143D916 /* Pods */,
+				A0FA56F5730037E2BDC156D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				408C0F471D72698C002C9868 /* Common */,
+				40FE9D121D73EF83003BACB4 /* Examples */,
 				408C0F481D72699B002C9868 /* Application */,
 			);
 			path = MBXExamples;
@@ -79,7 +113,6 @@
 				408C0F3E1D72697B002C9868 /* LaunchScreen.storyboard */,
 				408C0F3C1D72697B002C9868 /* Assets.xcassets */,
 				408C0F411D72697B002C9868 /* Info.plist */,
-				40FE9CF81D73BE18003BACB4 /* Constants.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -89,6 +122,7 @@
 			children = (
 				408C0F351D72697B002C9868 /* AppDelegate.swift */,
 				40BE2DF01D736886009581A9 /* CategoryManifest.swift */,
+				40FE9CF81D73BE18003BACB4 /* Constants.swift */,
 				40BE2DE91D732382009581A9 /* Category View */,
 				40BE2DEA1D73238E009581A9 /* ExampleList View */,
 				40FE9CF01D73AC85003BACB4 /* Map Container View */,
@@ -138,6 +172,31 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		40FE9D121D73EF83003BACB4 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				40FE9D131D73F015003BACB4 /* MapboxMapActivity.swift */,
+				40FE9D151D73F0CA003BACB4 /* Annotations */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		40FE9D151D73F0CA003BACB4 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				40FE9D161D73F0ED003BACB4 /* PolygonActivity.swift */,
+			);
+			name = Annotations;
+			sourceTree = "<group>";
+		};
+		A0FA56F5730037E2BDC156D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D6DAA5B6A6E899E8988A703 /* libPods-MBXExamples.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +204,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408C0F441D72697B002C9868 /* Build configuration list for PBXNativeTarget "MBXExamples" */;
 			buildPhases = (
+				70C6D3062501F0AB9F2B8D73 /* [CP] Check Pods Manifest.lock */,
 				408C0F2E1D72697B002C9868 /* Sources */,
 				408C0F2F1D72697B002C9868 /* Frameworks */,
 				408C0F301D72697B002C9868 /* Resources */,
+				40FE9D021D73EBEA003BACB4 /* Mapbox Copy Token */,
+				40FE9D101D73EE1A003BACB4 /* Embed Frameworks */,
+				E6B1EA95061BF46BB33A130A /* [CP] Embed Pods Frameworks */,
+				95856502A3BF9049B8BFF6EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +270,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40FE9D021D73EBEA003BACB4 /* Mapbox Copy Token */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Mapbox Copy Token";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "token_file=~/.mapbox\ntoken=\"$(cat $token_file)\"\nif [ \"$token\" ]; then\nplutil -replace MGLMapboxAccessToken -string $token \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nelse\necho 'error: Missing Mapbox access token'\nopen 'https://www.mapbox.com/studio/account/tokens/'\necho \"error: Get an access token from <https://www.mapbox.com/studio/account/tokens/>, then create a new file at $token_file that contains the access token.\"\nexit 1\nfi";
+		};
+		70C6D3062501F0AB9F2B8D73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95856502A3BF9049B8BFF6EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBXExamples/Pods-MBXExamples-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6B1EA95061BF46BB33A130A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBXExamples/Pods-MBXExamples-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		408C0F2E1D72697B002C9868 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -215,8 +341,10 @@
 				40BE2DEE1D732FDB009581A9 /* CategoryCollectionViewCell.swift in Sources */,
 				40BE2DF11D736886009581A9 /* CategoryManifest.swift in Sources */,
 				40BE2DEC1D7323CA009581A9 /* ExampleListCollectionViewController.swift in Sources */,
+				40FE9D171D73F0ED003BACB4 /* PolygonActivity.swift in Sources */,
 				408C0F381D72697B002C9868 /* CategoryViewController.swift in Sources */,
 				40FE9CF51D73AD7D003BACB4 /* ExampleCollectionViewCell.swift in Sources */,
+				40FE9D141D73F015003BACB4 /* MapboxMapActivity.swift in Sources */,
 				408C0F361D72697B002C9868 /* AppDelegate.swift in Sources */,
 				40FE9CF91D73BE18003BACB4 /* Constants.swift in Sources */,
 			);
@@ -337,11 +465,15 @@
 		};
 		408C0F451D72697B002C9868 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00ECBB9E649C681428899FED /* Pods-MBXExamples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U2WTRY45TY;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MBXExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.rebounds.MBXExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -350,11 +482,15 @@
 		};
 		408C0F461D72697B002C9868 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D02336C9ED571ED7A500E4 /* Pods-MBXExamples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U2WTRY45TY;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MBXExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = net.rebounds.MBXExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

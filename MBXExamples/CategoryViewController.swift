@@ -3,8 +3,8 @@ import UIKit
 class CategoryViewController: UICollectionViewController {
     
     let categoryCellIdentifier = "categoryCellIdentifier"
-    let screenSize = UIScreen.main.bounds
     var highlightedExamples: [Example]?
+    var obsuringViewController: UIViewController?
     
     // MARK: UIViewController
 
@@ -16,14 +16,15 @@ class CategoryViewController: UICollectionViewController {
     
     // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if let obsuringViewController = obsuringViewController {
+            return obsuringViewController.prepare(for: segue, sender: sender)
+        }
+
         if segue.destination is ExampleListCollectionViewController {
             let exampleListViewController = segue.destination as! ExampleListCollectionViewController
             exampleListViewController.examples = highlightedExamples
-        }
+        } 
     }
     
     // MARK: UICollectionViewDataSource
@@ -54,9 +55,11 @@ extension CategoryViewController: UINavigationControllerDelegate {
             let exampleListViewController = viewController as! ExampleListCollectionViewController
             exampleListViewController.collectionView?.delegate = exampleListViewController
             exampleListViewController.collectionView?.dataSource = exampleListViewController
+            obsuringViewController = exampleListViewController
         } else if viewController == self {
             collectionView?.delegate = self
             collectionView?.dataSource = self
+            obsuringViewController = nil
         }
     }
     
@@ -65,11 +68,12 @@ extension CategoryViewController: UINavigationControllerDelegate {
 extension CategoryViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: screenSize.width - 16, height: 100)
+        return itemSize
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 8, bottom: 10, right: 8)
+        return insets
     }
     
 }
+

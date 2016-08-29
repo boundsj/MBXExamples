@@ -15,6 +15,9 @@
 		40BE2DEC1D7323CA009581A9 /* ExampleListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE2DEB1D7323CA009581A9 /* ExampleListCollectionViewController.swift */; };
 		40BE2DEE1D732FDB009581A9 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE2DED1D732FDB009581A9 /* CategoryCollectionViewCell.swift */; };
 		40BE2DF11D736886009581A9 /* CategoryManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE2DF01D736886009581A9 /* CategoryManifest.swift */; };
+		40FE9CF21D73ACB0003BACB4 /* MapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE9CF11D73ACB0003BACB4 /* MapContainerViewController.swift */; };
+		40FE9CF51D73AD7D003BACB4 /* ExampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE9CF41D73AD7D003BACB4 /* ExampleCollectionViewCell.swift */; };
+		40FE9CF91D73BE18003BACB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE9CF81D73BE18003BACB4 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		40BE2DEB1D7323CA009581A9 /* ExampleListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleListCollectionViewController.swift; sourceTree = "<group>"; };
 		40BE2DED1D732FDB009581A9 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		40BE2DF01D736886009581A9 /* CategoryManifest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManifest.swift; sourceTree = "<group>"; };
+		40FE9CF11D73ACB0003BACB4 /* MapContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapContainerViewController.swift; sourceTree = "<group>"; };
+		40FE9CF41D73AD7D003BACB4 /* ExampleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewCell.swift; sourceTree = "<group>"; };
+		40FE9CF81D73BE18003BACB4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 				408C0F3E1D72697B002C9868 /* LaunchScreen.storyboard */,
 				408C0F3C1D72697B002C9868 /* Assets.xcassets */,
 				408C0F411D72697B002C9868 /* Info.plist */,
+				40FE9CF81D73BE18003BACB4 /* Constants.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -84,6 +91,7 @@
 				40BE2DF01D736886009581A9 /* CategoryManifest.swift */,
 				40BE2DE91D732382009581A9 /* Category View */,
 				40BE2DEA1D73238E009581A9 /* ExampleList View */,
+				40FE9CF01D73AC85003BACB4 /* Map Container View */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -100,6 +108,7 @@
 		40BE2DEA1D73238E009581A9 /* ExampleList View */ = {
 			isa = PBXGroup;
 			children = (
+				40FE9CF31D73AD4B003BACB4 /* Cells */,
 				40BE2DEB1D7323CA009581A9 /* ExampleListCollectionViewController.swift */,
 			);
 			name = "ExampleList View";
@@ -109,6 +118,22 @@
 			isa = PBXGroup;
 			children = (
 				40BE2DED1D732FDB009581A9 /* CategoryCollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		40FE9CF01D73AC85003BACB4 /* Map Container View */ = {
+			isa = PBXGroup;
+			children = (
+				40FE9CF11D73ACB0003BACB4 /* MapContainerViewController.swift */,
+			);
+			name = "Map Container View";
+			sourceTree = "<group>";
+		};
+		40FE9CF31D73AD4B003BACB4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				40FE9CF41D73AD7D003BACB4 /* ExampleCollectionViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -186,11 +211,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40FE9CF21D73ACB0003BACB4 /* MapContainerViewController.swift in Sources */,
 				40BE2DEE1D732FDB009581A9 /* CategoryCollectionViewCell.swift in Sources */,
 				40BE2DF11D736886009581A9 /* CategoryManifest.swift in Sources */,
 				40BE2DEC1D7323CA009581A9 /* ExampleListCollectionViewController.swift in Sources */,
 				408C0F381D72697B002C9868 /* CategoryViewController.swift in Sources */,
+				40FE9CF51D73AD7D003BACB4 /* ExampleCollectionViewCell.swift in Sources */,
 				408C0F361D72697B002C9868 /* AppDelegate.swift in Sources */,
+				40FE9CF91D73BE18003BACB4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

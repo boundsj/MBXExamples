@@ -26,7 +26,7 @@
         <scene sceneID="YSm-uR-oZ4">
             <objects>
                 <collectionViewController id="kjM-6B-s1X" customClass="CategoryViewController" customModule="MBXExamples" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="SWF-Ei-SHC">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="SWF-Ei-SHC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -38,7 +38,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCellIdentifier" id="Exe-bY-mlj" userLabel="Category Cell" customClass="CategoryCollectionViewCell" customModule="MBXExamples" customModuleProvider="target">
-                                <rect key="frame" x="38" y="8" width="300" height="100"/>
+                                <rect key="frame" x="37.5" y="8" width="300" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
@@ -46,7 +46,7 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cag-tm-KQN">
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIM-ZG-7ud">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIM-ZG-7ud">
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -73,13 +73,42 @@
                                     <segue destination="7EN-yT-gvj" kind="show" id="imA-gZ-Bq1"/>
                                 </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exampleCellIdentifier" id="xJh-IL-haI" userLabel="Example Cell">
-                                <rect key="frame" x="38" y="116" width="300" height="100"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exampleCellIdentifier" id="xJh-IL-haI" userLabel="Example Cell" customClass="ExampleCollectionViewCell" customModule="MBXExamples" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="116" width="300" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCN-b1-z3a">
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDN-o0-zaQ">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="LDN-o0-zaQ" firstAttribute="top" secondItem="iCN-b1-z3a" secondAttribute="top" constant="15" id="5CL-kT-DQj"/>
+                                                <constraint firstAttribute="trailing" secondItem="LDN-o0-zaQ" secondAttribute="trailing" constant="8" id="D7l-nM-Xfr"/>
+                                                <constraint firstItem="LDN-o0-zaQ" firstAttribute="leading" secondItem="iCN-b1-z3a" secondAttribute="leading" constant="8" id="gS4-1L-Xhi"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
                                 </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="iCN-b1-z3a" secondAttribute="bottom" id="6vd-ZA-81W"/>
+                                    <constraint firstItem="iCN-b1-z3a" firstAttribute="top" secondItem="xJh-IL-haI" secondAttribute="top" id="K4t-RB-5Pd"/>
+                                    <constraint firstItem="iCN-b1-z3a" firstAttribute="leading" secondItem="xJh-IL-haI" secondAttribute="leading" id="OZl-Nd-3ZI"/>
+                                    <constraint firstAttribute="trailing" secondItem="iCN-b1-z3a" secondAttribute="trailing" id="Zsw-56-BDs"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="containerView" destination="iCN-b1-z3a" id="3xN-ey-DVL"/>
+                                    <outlet property="titleLabel" destination="LDN-o0-zaQ" id="4VX-fz-jrJ"/>
+                                    <segue destination="HAu-Nk-M6U" kind="show" id="M7Y-KQ-FmZ"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -97,7 +126,7 @@
         <scene sceneID="2B2-xV-HI7">
             <objects>
                 <collectionViewController id="7EN-yT-gvj" customClass="ExampleListCollectionViewController" customModule="MBXExamples" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Gz6-FU-jg1">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Gz6-FU-jg1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -116,7 +145,25 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S43-QF-ekV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2073" y="79"/>
+            <point key="canvasLocation" x="2018" y="-31"/>
+        </scene>
+        <!--Map Container View Controller-->
+        <scene sceneID="wRk-jH-EHQ">
+            <objects>
+                <viewController id="HAu-Nk-M6U" customClass="MapContainerViewController" customModule="MBXExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SOE-TT-5bH"/>
+                        <viewControllerLayoutGuide type="bottom" id="aK3-QG-4eB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xdy-hi-mbp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFV-1N-jb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017" y="897"/>
         </scene>
     </scenes>
 </document>

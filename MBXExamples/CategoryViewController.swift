@@ -12,6 +12,7 @@ class CategoryViewController: UICollectionViewController {
         super.viewDidLoad()
         navigationController?.delegate = self
         collectionView?.delegate = self
+        navigationItem.title = "Mapbox Dev Preview"
     }
     
     // MARK: - Navigation

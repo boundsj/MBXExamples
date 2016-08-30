@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0W4-Kd-TcQ">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -165,10 +164,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IrV-X1-qpv" firstAttribute="leading" secondItem="Xdy-hi-mbp" secondAttribute="leading" id="Gxa-fz-JrT"/>
-                            <constraint firstAttribute="trailing" secondItem="IrV-X1-qpv" secondAttribute="trailing" id="TyI-NN-Cox"/>
-                            <constraint firstItem="aK3-QG-4eB" firstAttribute="top" secondItem="IrV-X1-qpv" secondAttribute="bottom" id="pdp-iO-wM3"/>
-                            <constraint firstItem="IrV-X1-qpv" firstAttribute="top" secondItem="SOE-TT-5bH" secondAttribute="bottom" id="w8f-kr-RpH"/>
+                            <constraint firstItem="aK3-QG-4eB" firstAttribute="top" secondItem="IrV-X1-qpv" secondAttribute="bottom" id="5cs-yT-zvr"/>
+                            <constraint firstAttribute="trailing" secondItem="IrV-X1-qpv" secondAttribute="trailing" id="ESr-Ed-b8d"/>
+                            <constraint firstItem="IrV-X1-qpv" firstAttribute="leading" secondItem="Xdy-hi-mbp" secondAttribute="leading" id="b5Y-MP-ioz"/>
+                            <constraint firstItem="IrV-X1-qpv" firstAttribute="top" secondItem="Xdy-hi-mbp" secondAttribute="top" id="x3e-cv-XBx"/>
                         </constraints>
                     </view>
                     <connections>
@@ -177,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFV-1N-jb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2017" y="897"/>
+            <point key="canvasLocation" x="2016.8" y="896.40179910044981"/>
         </scene>
     </scenes>
 </document>

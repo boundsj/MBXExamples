@@ -14,6 +14,8 @@ class ExampleListCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        self.navigationItem.title = 
     }
     
     // MARK: Navigation

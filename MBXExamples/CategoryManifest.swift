@@ -15,7 +15,8 @@ let categories = [
     
     Category(title: "Getting started",
              description: "The basics of Mapbox maps",
-             examples: [Example(title: "A simple map view", activity: SimpleMapActivity())]),
+             examples: [Example(title: "A simple map view", activity: SimpleMapActivity()),
+                        Example(title: "Change a map's style", activity: SetStyleActivity())]),
     
     Category(title: "Annotations",
              description: "Draw markers and shapes on the map",

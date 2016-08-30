@@ -11,14 +11,10 @@ class MapContainerViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = example?.title
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
         if let example = example {
             example.activity.update(mapView: mapView)
         }
-    }
+    }    
 
 }

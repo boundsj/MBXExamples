@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AA7B1B14FC3E64A9E50A889 /* libPods-MBXExamples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6DAA5B6A6E899E8988A703 /* libPods-MBXExamples.a */; };
+		4017951B1D7534B500564BC3 /* SimpleMapActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017951A1D7534B500564BC3 /* SimpleMapActivity.swift */; };
 		408C0F361D72697B002C9868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F351D72697B002C9868 /* AppDelegate.swift */; };
 		408C0F381D72697B002C9868 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F371D72697B002C9868 /* CategoryViewController.swift */; };
 		408C0F3B1D72697B002C9868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C0F391D72697B002C9868 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		00ECBB9E649C681428899FED /* Pods-MBXExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBXExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBXExamples/Pods-MBXExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		20D02336C9ED571ED7A500E4 /* Pods-MBXExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBXExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBXExamples/Pods-MBXExamples.release.xcconfig"; sourceTree = "<group>"; };
+		4017951A1D7534B500564BC3 /* SimpleMapActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMapActivity.swift; sourceTree = "<group>"; };
 		408C0F321D72697B002C9868 /* MBXExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBXExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408C0F351D72697B002C9868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		408C0F371D72697B002C9868 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 				20D02336C9ED571ED7A500E4 /* Pods-MBXExamples.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		401795191D75348900564BC3 /* Getting Started */ = {
+			isa = PBXGroup;
+			children = (
+				4017951A1D7534B500564BC3 /* SimpleMapActivity.swift */,
+			);
+			name = "Getting Started";
 			sourceTree = "<group>";
 		};
 		408C0F291D72697B002C9868 = {
@@ -176,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				40FE9D131D73F015003BACB4 /* MapboxMapActivity.swift */,
+				401795191D75348900564BC3 /* Getting Started */,
 				40FE9D151D73F0CA003BACB4 /* Annotations */,
 			);
 			name = Examples;
@@ -341,6 +352,7 @@
 				40BE2DEE1D732FDB009581A9 /* CategoryCollectionViewCell.swift in Sources */,
 				40BE2DF11D736886009581A9 /* CategoryManifest.swift in Sources */,
 				40BE2DEC1D7323CA009581A9 /* ExampleListCollectionViewController.swift in Sources */,
+				4017951B1D7534B500564BC3 /* SimpleMapActivity.swift in Sources */,
 				40FE9D171D73F0ED003BACB4 /* PolygonActivity.swift in Sources */,
 				408C0F381D72697B002C9868 /* CategoryViewController.swift in Sources */,
 				40FE9CF51D73AD7D003BACB4 /* ExampleCollectionViewCell.swift in Sources */,

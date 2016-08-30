@@ -13,12 +13,12 @@ struct Category {
 
 let categories = [
     
+    Category(title: "Getting started",
+             description: "The basics of Mapbox maps",
+             examples: [Example(title: "A simple map view", activity: SimpleMapActivity())]),
+    
     Category(title: "Annotations",
              description: "Draw markers and shapes on the map",
              examples: [Example(title: "Polygon", activity: PolygonActivity())]),
-    
-    Category(title: "Camera",
-             description: "Draw markers and shapes on the map",
-             examples: [Example(title: "Animation", activity: PolygonActivity())])
     
 ]

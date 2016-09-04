@@ -8,7 +8,7 @@ class SetStyleActivity: NSObject, MapboxMapActivity {
         self.mapView = mapView
         
         // center the map on Paris, France and zoom in a bit
-        mapView.setCenter(CLLocationCoordinate2DMake(48.864716, 2.349014), zoomLevel: 11, animated: true)
+        mapView.setCenter(CLLocationCoordinate2DMake(48.864716, 2.349014), zoomLevel: 11, animated: false)
         
         // add some controls to allow us to tell the map what style we want to use
         addControls()

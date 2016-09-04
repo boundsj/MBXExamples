@@ -20,6 +20,8 @@ let categories = [
     
     Category(title: "Annotations",
              description: "Draw markers and shapes on the map",
-             examples: [Example(title: "Polygon", activity: PolygonActivity())]),
+             examples: [Example(title: "Polygon", activity: PolygonActivity()),
+                        Example(title: "Heat map", activity: HeatMapActivity()),
+        ]),
     
 ]

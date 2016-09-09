@@ -24,4 +24,8 @@ let categories = [
                         Example(title: "Heat map", activity: HeatMapActivity()),
         ]),
     
+    Category(title: "Experimental",
+             description: "Here be dragons",
+             examples: [Example(title: "Style vector source layer", activity: StyleVectorSourceLayer())]),
+    
 ]

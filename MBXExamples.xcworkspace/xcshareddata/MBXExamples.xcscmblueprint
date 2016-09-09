@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D6B4682C7AE137DE5A523668C3137F227730D765",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D6B4682C7AE137DE5A523668C3137F227730D765" : 9223372036854775807,
+    "7E68CB584078A487C0535CC191D3B7551EEE2095" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CA366673-E34E-4B0B-95C7-C0EAF166FB75",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D6B4682C7AE137DE5A523668C3137F227730D765" : "MBXExamples\/",
+    "7E68CB584078A487C0535CC191D3B7551EEE2095" : "..\/mbgl"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MBXExamples",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MBXExamples.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mapbox\/mapbox-gl-native.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7E68CB584078A487C0535CC191D3B7551EEE2095"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:boundsj\/MBXExamples.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D6B4682C7AE137DE5A523668C3137F227730D765"
+    }
+  ]
+}

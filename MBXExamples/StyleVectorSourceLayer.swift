@@ -11,25 +11,19 @@ class StyleVectorSourceLayer: NSObject, MapboxMapActivity {
     // MARK: MGLMapViewDelegate
     
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
-        let url = URL(string: "mapbox://mapbox.mapbox-terrain-v2")
-        
-        if let vectorSource = MGLVectorSource(sourceIdentifier: "terrain-data", url: url) {
-            // add the vector source
-            mapView.style().add(vectorSource)
-            
-            let lineLayer = MGLLineStyleLayer(layerIdentifier: "terrain-data", source: vectorSource, sourceLayer: "contour")
-            lineLayer.lineColor = UIColor.red
-            
-            var lineJoinValue = MGLLineStyleLayerLineJoin.round.rawValue
-            let lineJoinNumber = NSNumber(value: lineJoinValue)
-            lineLayer.lineJoin = NSValue(bytes: &lineJoinValue, objCType: lineJoinNumber.objCType)
-            
-            var lineCapValue = MGLLineStyleLayerLineCap.round.rawValue
-            let lineCapNumber = NSNumber(value: lineCapValue)
-            lineLayer.lineCap = NSValue(bytes: &lineCapValue, objCType: lineCapNumber.objCType)
-            
-            mapView.style().add(lineLayer)
-        }
+
+        let url = URL(string: "mapbox://mapbox.mapbox-terrain-v2")!
+        let vectorSource = MGLVectorSource(identifier: "terrain-data", url: url)
+
+        // add the vector source
+        mapView.style().add(vectorSource)
+
+        let lineLayer = MGLLineStyleLayer(identifier: "terrain-data", source: vectorSource)
+        lineLayer.sourceLayerIdentifier = "contour"
+        lineLayer.lineColor = MGLStyleConstantValue(rawValue: .red)
+        lineLayer.lineJoin = MGLStyleValue(rawValue: NSValue(mglLineJoin: .round))
+        mapView.style().add(lineLayer)
+
     }
 
 }

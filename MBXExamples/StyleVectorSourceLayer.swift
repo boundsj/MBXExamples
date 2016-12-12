@@ -8,21 +8,21 @@ class StyleVectorSourceLayer: NSObject, MapboxMapActivity {
         mapView.setCenter(CLLocationCoordinate2DMake(37.7540113, -122.4484512), zoomLevel: 15, animated: false)
     }
     
-    // MARK: MGLMapViewDelegate
-    
+//     MARK: MGLMapViewDelegate
+
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
 
         let url = URL(string: "mapbox://mapbox.mapbox-terrain-v2")!
-        let vectorSource = MGLVectorSource(identifier: "terrain-data", url: url)
+        let vectorSource = MGLVectorSource(identifier: "terrain-data", configurationURL: url)
 
         // add the vector source
-        mapView.style().add(vectorSource)
+        mapView.style.addSource(vectorSource)
 
         let lineLayer = MGLLineStyleLayer(identifier: "terrain-data", source: vectorSource)
         lineLayer.sourceLayerIdentifier = "contour"
         lineLayer.lineColor = MGLStyleConstantValue(rawValue: .red)
         lineLayer.lineJoin = MGLStyleValue(rawValue: NSValue(mglLineJoin: .round))
-        mapView.style().add(lineLayer)
+        mapView.style.addLayer(lineLayer)
 
     }
 

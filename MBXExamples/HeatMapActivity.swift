@@ -22,9 +22,9 @@ class HeatMapActivity: NSObject, MapboxMapActivity {
         mapView.style.addSource(shapeSource)
 
         let unclusteredLayer = MGLCircleStyleLayer(identifier: "unclustered", source: shapeSource)
-        unclusteredLayer.circleColor = MGLStyleConstantValue(rawValue: UIColor(colorLiteralRed: 229/255.0, green: 94/255.0, blue: 94/255.0, alpha: 1))
-        unclusteredLayer.circleRadius = MGLStyleConstantValue(rawValue: NSNumber(integerLiteral: 20))
-        unclusteredLayer.circleBlur = MGLStyleConstantValue(rawValue: NSNumber(integerLiteral: 15))
+        unclusteredLayer.circleColor = MGLStyleValue(rawValue: UIColor(colorLiteralRed: 229/255.0, green: 94/255.0, blue: 94/255.0, alpha: 1))
+        unclusteredLayer.circleRadius = MGLStyleValue(rawValue: NSNumber(integerLiteral: 20))
+        unclusteredLayer.circleBlur = MGLStyleValue(rawValue: NSNumber(integerLiteral: 15))
         unclusteredLayer.predicate = NSPredicate(format: "%K != YES", argumentArray: ["cluster"])
         mapView.style.insertLayer(unclusteredLayer, below: symbolLayer)
 
@@ -34,9 +34,9 @@ class HeatMapActivity: NSObject, MapboxMapActivity {
 
         for index in 0..<layers.count {
             let circles = MGLCircleStyleLayer(identifier: "cluster-\(index)", source: shapeSource)
-            circles.circleColor = MGLStyleConstantValue(rawValue: layers[index][1] as! UIColor)
-            circles.circleRadius = MGLStyleConstantValue(rawValue: NSNumber(integerLiteral: 70))
-            circles.circleBlur = MGLStyleConstantValue(rawValue: NSNumber(integerLiteral: 1))
+            circles.circleColor = MGLStyleValue(rawValue: layers[index][1] as! UIColor)
+            circles.circleRadius = MGLStyleValue(rawValue: NSNumber(integerLiteral: 70))
+            circles.circleBlur = MGLStyleValue(rawValue: NSNumber(integerLiteral: 1))
 
             let gtePredicate = NSPredicate(format: "%K >= %@", argumentArray: ["point_count", layers[index][0] as! NSNumber])
             let allPredicate = index == 0 ?

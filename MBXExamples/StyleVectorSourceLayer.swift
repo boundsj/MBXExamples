@@ -16,13 +16,13 @@ class StyleVectorSourceLayer: NSObject, MapboxMapActivity {
         let vectorSource = MGLVectorSource(identifier: "terrain-data", configurationURL: url)
 
         // add the vector source
-        mapView.style.addSource(vectorSource)
+        mapView.style?.addSource(vectorSource)
 
         let lineLayer = MGLLineStyleLayer(identifier: "terrain-data", source: vectorSource)
         lineLayer.sourceLayerIdentifier = "contour"
         lineLayer.lineColor = MGLStyleValue(rawValue: .red)
         lineLayer.lineJoin = MGLStyleValue(rawValue: NSValue(mglLineJoin: .round))
-        mapView.style.addLayer(lineLayer)
+        mapView.style?.addLayer(lineLayer)
 
     }
 

@@ -19,14 +19,14 @@ class HeatMapActivity: NSObject, MapboxMapActivity {
                        MGLShapeSourceOption.clusterRadius: NSNumber(integerLiteral: 20),
                        MGLShapeSourceOption.maximumZoomLevel: NSNumber(integerLiteral: 15)]
         let shapeSource = MGLShapeSource(identifier: "earthquakes", url: url, options: options)
-        mapView.style.addSource(shapeSource)
+        mapView.style?.addSource(shapeSource)
 
         let unclusteredLayer = MGLCircleStyleLayer(identifier: "unclustered", source: shapeSource)
         unclusteredLayer.circleColor = MGLStyleValue(rawValue: UIColor(colorLiteralRed: 229/255.0, green: 94/255.0, blue: 94/255.0, alpha: 1))
         unclusteredLayer.circleRadius = MGLStyleValue(rawValue: NSNumber(integerLiteral: 20))
         unclusteredLayer.circleBlur = MGLStyleValue(rawValue: NSNumber(integerLiteral: 15))
         unclusteredLayer.predicate = NSPredicate(format: "%K != YES", argumentArray: ["cluster"])
-        mapView.style.insertLayer(unclusteredLayer, below: symbolLayer)
+        mapView.style?.insertLayer(unclusteredLayer, below: symbolLayer)
 
         let layers = [[NSNumber(floatLiteral: 150.0), UIColor(colorLiteralRed: 229/255.0, green: 94/255.0, blue: 94/255.0, alpha: 1)],
                       [NSNumber(floatLiteral: 20.0), UIColor(colorLiteralRed: 249/255.0, green: 136/255.0, blue: 108/255.0, alpha: 1)],
@@ -45,7 +45,7 @@ class HeatMapActivity: NSObject, MapboxMapActivity {
 
             circles.predicate = allPredicate
 
-            mapView.style.insertLayer(circles, below: symbolLayer)
+            mapView.style?.insertLayer(circles, below: symbolLayer)
         }
     }
 

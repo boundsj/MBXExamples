@@ -19,6 +19,7 @@
 		40BE2DEC1D7323CA009581A9 /* ExampleListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE2DEB1D7323CA009581A9 /* ExampleListCollectionViewController.swift */; };
 		40BE2DEE1D732FDB009581A9 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE2DED1D732FDB009581A9 /* CategoryCollectionViewCell.swift */; };
 		40BE2DF11D736886009581A9 /* CategoryManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE2DF01D736886009581A9 /* CategoryManifest.swift */; };
+		40D724AF1E4D213E00E2EE78 /* QueryShapesActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D724AE1E4D213E00E2EE78 /* QueryShapesActivity.swift */; };
 		40EE696E1D76617E00159B4F /* HeatMapActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE696D1D76617E00159B4F /* HeatMapActivity.swift */; };
 		40FE9CF21D73ACB0003BACB4 /* MapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE9CF11D73ACB0003BACB4 /* MapContainerViewController.swift */; };
 		40FE9CF51D73AD7D003BACB4 /* ExampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FE9CF41D73AD7D003BACB4 /* ExampleCollectionViewCell.swift */; };
@@ -56,6 +57,7 @@
 		40BE2DEB1D7323CA009581A9 /* ExampleListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleListCollectionViewController.swift; sourceTree = "<group>"; };
 		40BE2DED1D732FDB009581A9 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		40BE2DF01D736886009581A9 /* CategoryManifest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManifest.swift; sourceTree = "<group>"; };
+		40D724AE1E4D213E00E2EE78 /* QueryShapesActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryShapesActivity.swift; sourceTree = "<group>"; };
 		40EE696D1D76617E00159B4F /* HeatMapActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeatMapActivity.swift; sourceTree = "<group>"; };
 		40FE9CF11D73ACB0003BACB4 /* MapContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapContainerViewController.swift; sourceTree = "<group>"; };
 		40FE9CF41D73AD7D003BACB4 /* ExampleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -181,6 +183,14 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		40D724AD1E4D20D700E2EE78 /* Runtime Styling */ = {
+			isa = PBXGroup;
+			children = (
+				40D724AE1E4D213E00E2EE78 /* QueryShapesActivity.swift */,
+			);
+			name = "Runtime Styling";
+			sourceTree = "<group>";
+		};
 		40FE9CF01D73AC85003BACB4 /* Map Container View */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,8 +212,9 @@
 			children = (
 				40FE9D131D73F015003BACB4 /* MapboxMapActivity.swift */,
 				40FE9D151D73F0CA003BACB4 /* Annotations */,
-				401795191D75348900564BC3 /* Getting Started */,
 				4052E1AA1D7E31A4006726B3 /* Experimental */,
+				401795191D75348900564BC3 /* Getting Started */,
+				40D724AD1E4D20D700E2EE78 /* Runtime Styling */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -365,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D724AF1E4D213E00E2EE78 /* QueryShapesActivity.swift in Sources */,
 				40FE9CF21D73ACB0003BACB4 /* MapContainerViewController.swift in Sources */,
 				40BE2DEE1D732FDB009581A9 /* CategoryCollectionViewCell.swift in Sources */,
 				40BE2DF11D736886009581A9 /* CategoryManifest.swift in Sources */,

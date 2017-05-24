@@ -10,6 +10,7 @@
 		1AA7B1B14FC3E64A9E50A889 /* libPods-MBXExamples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6DAA5B6A6E899E8988A703 /* libPods-MBXExamples.a */; };
 		4017951B1D7534B500564BC3 /* SimpleMapActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017951A1D7534B500564BC3 /* SimpleMapActivity.swift */; };
 		4017951D1D7539ED00564BC3 /* SetStyleActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017951C1D7539ED00564BC3 /* SetStyleActivity.swift */; };
+		405172E21EB0ECE700F8CDA1 /* EmbeddedShapesActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405172E11EB0ECE700F8CDA1 /* EmbeddedShapesActivity.swift */; };
 		4052E1AD1D7E3298006726B3 /* StyleVectorSourceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052E1AC1D7E3298006726B3 /* StyleVectorSourceLayer.swift */; };
 		408C0F361D72697B002C9868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F351D72697B002C9868 /* AppDelegate.swift */; };
 		408C0F381D72697B002C9868 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F371D72697B002C9868 /* CategoryViewController.swift */; };
@@ -46,6 +47,7 @@
 		20D02336C9ED571ED7A500E4 /* Pods-MBXExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBXExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBXExamples/Pods-MBXExamples.release.xcconfig"; sourceTree = "<group>"; };
 		4017951A1D7534B500564BC3 /* SimpleMapActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMapActivity.swift; sourceTree = "<group>"; };
 		4017951C1D7539ED00564BC3 /* SetStyleActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetStyleActivity.swift; sourceTree = "<group>"; };
+		405172E11EB0ECE700F8CDA1 /* EmbeddedShapesActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddedShapesActivity.swift; sourceTree = "<group>"; };
 		4052E1AC1D7E3298006726B3 /* StyleVectorSourceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleVectorSourceLayer.swift; sourceTree = "<group>"; };
 		408C0F321D72697B002C9868 /* MBXExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBXExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408C0F351D72697B002C9868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				40D724AE1E4D213E00E2EE78 /* QueryShapesActivity.swift */,
+				405172E11EB0ECE700F8CDA1 /* EmbeddedShapesActivity.swift */,
 			);
 			name = "Runtime Styling";
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			files = (
 				40D724AF1E4D213E00E2EE78 /* QueryShapesActivity.swift in Sources */,
 				40FE9CF21D73ACB0003BACB4 /* MapContainerViewController.swift in Sources */,
+				405172E21EB0ECE700F8CDA1 /* EmbeddedShapesActivity.swift in Sources */,
 				40BE2DEE1D732FDB009581A9 /* CategoryCollectionViewCell.swift in Sources */,
 				40BE2DF11D736886009581A9 /* CategoryManifest.swift in Sources */,
 				40BE2DEC1D7323CA009581A9 /* ExampleListCollectionViewController.swift in Sources */,

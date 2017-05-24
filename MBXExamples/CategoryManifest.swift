@@ -25,7 +25,8 @@ let categories = [
 
     Category(title: "Runtime Styling",
              description: "Runtime Styling & DDS",
-             examples: [Example(title: "Query custom shapes", activity: QueryShapesActivity())]),
+             examples: [Example(title: "Query custom shapes", activity: QueryShapesActivity()),
+                        Example(title: "Embed shape in style", activity: EmbeddedShapesActivity())]),
     
     Category(title: "Experimental",
              description: "Here be dragons",

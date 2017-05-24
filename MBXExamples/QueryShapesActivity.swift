@@ -4,7 +4,7 @@ class QueryShapesActivity: NSObject, MapboxMapActivity {
 
     var shapeSource: MGLShapeSource!
     var circleStyleLayer: MGLCircleStyleLayer!
-    var newCircleStyleLayer: MGLCircleStyleLayer?
+    var newCircleStyleLayer: MGLCircleStyleLayer!
 
     var isStyleLoaded: Bool = false
 
@@ -49,12 +49,27 @@ extension QueryShapesActivity: MGLMapViewDelegate {
         )
         circleStyleLayer.circleRadius = MGLStyleValue<NSNumber>(rawValue: 25)
         style.addLayer(circleStyleLayer)
+
+        // Add a new style layer so that new features show a transition
+        newCircleStyleLayer = MGLCircleStyleLayer(identifier: "new-circle-layer", source: shapeSource)
+        newCircleStyleLayer.predicate = NSPredicate(format: "status == 'new'")
+        newCircleStyleLayer.circleColor = MGLStyleValue(
+            interpolationMode: .identity,
+            sourceStops: nil,
+            attributeName: "hexColor",
+            options: [.defaultValue: MGLStyleValue<UIColor>(rawValue: .red)]
+        )
+        newCircleStyleLayer.circleRadius = MGLStyleValue<NSNumber>(rawValue: 5)
+        mapView.style?.addLayer(newCircleStyleLayer!)
     }
 
     func mapView(_ mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {
         guard isStyleLoaded else {
             return
         }
+
+        newCircleStyleLayer.circleRadiusTransition = MGLTransition(duration: 0, delay: 0)
+        newCircleStyleLayer.circleRadius = MGLStyleValue<NSNumber>(rawValue: 5)
 
         // Add a new feature
         let feature = generateFeature(centerCoordinate: mapView.centerCoordinate)
@@ -74,22 +89,11 @@ extension QueryShapesActivity: MGLMapViewDelegate {
         let shapeCollection = MGLShapeCollectionFeature(shapes: allFeatures)
         shapeSource.shape = shapeCollection
 
-        // Remove any previous style layer used for adding the new shape
-        if let newCircleStyleLayer = newCircleStyleLayer {
-            mapView.style?.removeLayer(newCircleStyleLayer)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+            self.newCircleStyleLayer.circleRadiusTransition = MGLTransition(duration: 2, delay: 0)
+            self.newCircleStyleLayer.circleRadius = MGLStyleValue<NSNumber>(rawValue: 25)
         }
 
-        // Add a new style layer so that new features show a transition
-        newCircleStyleLayer = MGLCircleStyleLayer(identifier: "new-circle-layer", source: shapeSource)
-        newCircleStyleLayer?.circleColor = MGLStyleValue(
-            interpolationMode: .identity,
-            sourceStops: nil,
-            attributeName: "hexColor",
-            options: [.defaultValue: MGLStyleValue<UIColor>(rawValue: .red)]
-        )
-        newCircleStyleLayer?.circleRadiusTransition = MGLTransition(duration: 2, delay: 0)
-        newCircleStyleLayer?.circleRadius = MGLStyleValue<NSNumber>(rawValue: 25)
-        mapView.style?.addLayer(newCircleStyleLayer!)
     }
 
 }

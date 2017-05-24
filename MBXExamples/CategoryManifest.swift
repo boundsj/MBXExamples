@@ -21,7 +21,8 @@ let categories = [
     Category(title: "Annotations",
              description: "Draw markers and shapes on the map",
              examples: [Example(title: "Polygon", activity: PolygonActivity()),
-                        Example(title: "Heat map", activity: HeatMapActivity())]),
+                        Example(title: "Heat map", activity: HeatMapActivity()),
+                        Example(title: "Draggable annotation", activity: DraggableCustomAnnotationActivity())]),
 
     Category(title: "Runtime Styling",
              description: "Runtime Styling & DDS",

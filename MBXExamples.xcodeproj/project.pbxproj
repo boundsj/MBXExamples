@@ -12,6 +12,8 @@
 		4017951D1D7539ED00564BC3 /* SetStyleActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017951C1D7539ED00564BC3 /* SetStyleActivity.swift */; };
 		405172E21EB0ECE700F8CDA1 /* EmbeddedShapesActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405172E11EB0ECE700F8CDA1 /* EmbeddedShapesActivity.swift */; };
 		4052E1AD1D7E3298006726B3 /* StyleVectorSourceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052E1AC1D7E3298006726B3 /* StyleVectorSourceLayer.swift */; };
+		405F38D01ED60A6900B54368 /* DraggableCustomAnnotationActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F38CF1ED60A6900B54368 /* DraggableCustomAnnotationActivity.swift */; };
+		405F38D21ED60BD100B54368 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405F38D11ED60BD100B54368 /* CustomAnnotationView.swift */; };
 		408C0F361D72697B002C9868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F351D72697B002C9868 /* AppDelegate.swift */; };
 		408C0F381D72697B002C9868 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C0F371D72697B002C9868 /* CategoryViewController.swift */; };
 		408C0F3B1D72697B002C9868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C0F391D72697B002C9868 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		4017951C1D7539ED00564BC3 /* SetStyleActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetStyleActivity.swift; sourceTree = "<group>"; };
 		405172E11EB0ECE700F8CDA1 /* EmbeddedShapesActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddedShapesActivity.swift; sourceTree = "<group>"; };
 		4052E1AC1D7E3298006726B3 /* StyleVectorSourceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleVectorSourceLayer.swift; sourceTree = "<group>"; };
+		405F38CF1ED60A6900B54368 /* DraggableCustomAnnotationActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCustomAnnotationActivity.swift; sourceTree = "<group>"; };
+		405F38D11ED60BD100B54368 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		408C0F321D72697B002C9868 /* MBXExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBXExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408C0F351D72697B002C9868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		408C0F371D72697B002C9868 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 			children = (
 				40FE9D161D73F0ED003BACB4 /* PolygonActivity.swift */,
 				40EE696D1D76617E00159B4F /* HeatMapActivity.swift */,
+				405F38CF1ED60A6900B54368 /* DraggableCustomAnnotationActivity.swift */,
+				405F38D11ED60BD100B54368 /* CustomAnnotationView.swift */,
 			);
 			name = Annotations;
 			sourceTree = "<group>";
@@ -339,7 +345,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		95856502A3BF9049B8BFF6EE /* [CP] Copy Pods Resources */ = {
@@ -389,11 +395,13 @@
 				40FE9D171D73F0ED003BACB4 /* PolygonActivity.swift in Sources */,
 				4052E1AD1D7E3298006726B3 /* StyleVectorSourceLayer.swift in Sources */,
 				408C0F381D72697B002C9868 /* CategoryViewController.swift in Sources */,
+				405F38D01ED60A6900B54368 /* DraggableCustomAnnotationActivity.swift in Sources */,
 				40FE9CF51D73AD7D003BACB4 /* ExampleCollectionViewCell.swift in Sources */,
 				40FE9D141D73F015003BACB4 /* MapboxMapActivity.swift in Sources */,
 				408C0F361D72697B002C9868 /* AppDelegate.swift in Sources */,
 				40EE696E1D76617E00159B4F /* HeatMapActivity.swift in Sources */,
 				40FE9CF91D73BE18003BACB4 /* Constants.swift in Sources */,
+				405F38D21ED60BD100B54368 /* CustomAnnotationView.swift in Sources */,
 				4017951D1D7539ED00564BC3 /* SetStyleActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../../Desktop/shr.gpx">
+   </FileRef>
+   <FileRef
       location = "group:MBXExamples.xcodeproj">
    </FileRef>
    <FileRef
